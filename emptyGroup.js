@@ -52,7 +52,7 @@ async function main(){
         }
         );
     observer.observe(document.getElementById("fluent-default-layer-host"), {attributes: false, childList: true, characterData: false, subtree:true}); 
-   // const delay = async (ms = 1000) => new Promise(resolve => setTimeout(resolve, ms));
+    const delay = async (ms = 1000) => new Promise(resolve => setTimeout(resolve, ms));
     var j = 0;
     var breaker = "yes"
     while(j < Math.ceil(tasklen/10)){
