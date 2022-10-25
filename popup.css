@@ -1,0 +1,36 @@
+#start {
+    text-align: center;
+    display: block;
+}
+
+#check {
+    display: none;
+    text-align: center;
+}
+.button {
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+#empty {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+#continue {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+#cancel {
+    color: white;
+    background-color:darkred;
+}

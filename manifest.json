@@ -1,0 +1,23 @@
+{
+    "name": "Delete Email Group",
+    "description": "Build an Extension!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["storage","scripting","tabs"],
+    "host_permissions": [ "https://outlook.office.com/mail/group/Ontariogov.onmicrosoft.com/*/email",
+    "https://outlook.office.com/mail/group/Ontariogov.onmicrosoft.com/*/email/*"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_title": ""
+    },
+    "icons": {
+      "16": "/image/16.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://outlook.office.com/mail/group/Ontariogov.onmicrosoft.com/*/email",
+        "https://outlook.office.com/mail/group/Ontariogov.onmicrosoft.com/*/email/*"],
+      "js": ["sites/emptyGroup.js"]
+      }
+    ]
+}
